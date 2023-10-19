@@ -1,1 +1,13 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+.card {
+  width: 15%;
+  height: 40%;
+  justify-content: space-between;
+  padding: 4px;
+  border-radius: 14px;
+  box-shadow: 6px 5px 14px black;
+  font-size: 55px;
+}
+#paloInf {
+  transform: rotate(-180deg);
+}
