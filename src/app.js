@@ -5,8 +5,7 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function() {
-  // Numeros y letras aleatorias
+window.cardGenerator2 = function() {
   function RandomCardNumber() {
     let arr = [
       "A",
@@ -57,3 +56,20 @@ window.onload = function() {
     paloInferior.setAttribute("style", "color:black");
   }
 };
+// Permite que la funcion se ejecute cada vez que se reinicie la web
+window.onload = function() {
+  cardGenerator2();
+};
+// Codigo que ejecuta la funcion cardGenerator2 cada 10.000 milsec
+const intervalID = setInterval(myCallback, 10000);
+function myCallback() {
+  cardGenerator2();
+}
+// Codigo que permite al usuario cambiar las dimensiones de la carta
+function redimensionar() {
+  let width = document.querySelector("#cardWidth");
+  let height = document.querySelector("#cardHeight");
+
+  document.querySelector("card").style.width = width + "px";
+  document.querySelector("card").style.height = height + "px";
+}
