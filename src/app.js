@@ -61,14 +61,14 @@ window.onload = function() {
   cardGenerator2();
 };
 // Codigo que ejecuta la funcion cardGenerator2 cada 10.000 milsec
-const intervalID = setInterval(myCallback, 10000);
+window.intervalID = setInterval(myCallback, 10000);
 function myCallback() {
   cardGenerator2();
 }
 // Codigo que permite al usuario cambiar las dimensiones de la carta
-function redimensionar() {
+window.redimensionar = function redimensionar() {
   let width = document.querySelector("#cardWidth").value;
   let height = document.querySelector("#cardHeight").value;
   document.querySelector(".card").style.width = width + "px";
   document.querySelector(".card").style.height = height + "px";
-}
+};

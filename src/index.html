@@ -25,17 +25,33 @@
       >
         Generate new card
       </button>
-      <div class="container-fluid text-center">
+      <div class="sizing container-fluid">
+        <div class="form-floating mb-2">
+          <input
+            type="xSizing"
+            class="form-control"
+            id="cardWidth"
+            placeholder="xSize"
+          />
+          <label for="floatingInput">Width</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="ySizing"
+            class="form-control"
+            id="cardHeight"
+            placeholder="ySize"
+          />
+          <label for="floatingHeight">Height</label>
+        </div>
         <button
           onclick="redimensionar()"
           type="button"
-          class="btn btn-light mx-2"
+          class="btn btn-light m-4"
           style="border-color: black;"
         >
-          Change card dimension
+          Change card's dimension
         </button>
-        <input id="cardWidth" type="number" />
-        <input id="cardHeight" type="number" />
       </div>
     </div>
   </body>
