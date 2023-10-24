@@ -67,9 +67,8 @@ function myCallback() {
 }
 // Codigo que permite al usuario cambiar las dimensiones de la carta
 function redimensionar() {
-  let width = document.querySelector("#cardWidth");
-  let height = document.querySelector("#cardHeight");
-
-  document.querySelector("card").style.width = width + "px";
-  document.querySelector("card").style.height = height + "px";
+  let width = document.querySelector("#cardWidth").value;
+  let height = document.querySelector("#cardHeight").value;
+  document.querySelector(".card").style.width = width + "px";
+  document.querySelector(".card").style.height = height + "px";
 }
